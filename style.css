@@ -1,6 +1,7 @@
 /* ----------------------------- *
  *             RESET             *
  * ----------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap");
 html,
 body,
 div,
@@ -179,15 +180,16 @@ html {
   left: 0;
   width: 100%;
   padding: 15px 25px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   color: #FFF;
 }
 
 .site-header__logo {
   padding: 0 8px;
-  border: solid #FFF 2px;
+  border: solid #1c5dbe 4px;
   border-radius: 50%;
   font-size: 25px;
+  font-weight: bold;
 }
 
 /* ----------------------------- *
@@ -209,7 +211,7 @@ html {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #FFD400;
+  background-color: #1c5dbe;
 }
 
 .menu__item:last-child {
@@ -230,7 +232,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-image: url("images/hero-background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -249,9 +251,9 @@ html {
 .hero__title {
   position: relative;
   z-index: 100;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 55px;
-  color: #FFF;
+  color: white;
 }
 
 .hero__title .hero-name {
@@ -266,7 +268,7 @@ html {
   left: 0;
   width: 100%;
   height: 8px;
-  background-color: #FFD400;
+  background-color: #1c5dbe;
   -webkit-transition: height .3s ease-in-out;
   transition: height .3s ease-in-out;
 }
@@ -294,12 +296,14 @@ html {
 .projects {
   padding: 30px 0;
   text-align: center;
+  background: #1d1d1d;
+  color: white;
 }
 
 .projects__title {
   display: inline-block;
   padding-bottom: 70px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 50px;
 }
 
@@ -308,7 +312,7 @@ html {
   display: block;
   width: 100%;
   height: 8px;
-  background-color: #FFD400;
+  background-color: #1c5dbe;
 }
 
 .projects__items {
@@ -356,6 +360,144 @@ html {
           transform: scale(1.2);
 }
 
+@-webkit-keyframes project-item-animation-1 {
+  100% {
+    -webkit-transform: translate(0.8vw, 0.8vh);
+            transform: translate(0.8vw, 0.8vh);
+  }
+}
+
+@keyframes project-item-animation-1 {
+  100% {
+    -webkit-transform: translate(0.8vw, 0.8vh);
+            transform: translate(0.8vw, 0.8vh);
+  }
+}
+
+.project-item:nth-child(1) {
+  -webkit-animation: project-item-animation-1 2.1s infinite;
+          animation: project-item-animation-1 2.1s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes project-item-animation-2 {
+  100% {
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
+  }
+}
+
+@keyframes project-item-animation-2 {
+  100% {
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
+  }
+}
+
+.project-item:nth-child(2) {
+  -webkit-animation: project-item-animation-2 3.2s infinite;
+          animation: project-item-animation-2 3.2s infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes project-item-animation-3 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+@keyframes project-item-animation-3 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+.project-item:nth-child(3) {
+  -webkit-animation: project-item-animation-3 3.3s infinite;
+          animation: project-item-animation-3 3.3s infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes project-item-animation-4 {
+  100% {
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
+  }
+}
+
+@keyframes project-item-animation-4 {
+  100% {
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
+  }
+}
+
+.project-item:nth-child(4) {
+  -webkit-animation: project-item-animation-4 3.6s infinite;
+          animation: project-item-animation-4 3.6s infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes project-item-animation-5 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+@keyframes project-item-animation-5 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+.project-item:nth-child(5) {
+  -webkit-animation: project-item-animation-5 3.3s infinite;
+          animation: project-item-animation-5 3.3s infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes project-item-animation-6 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+@keyframes project-item-animation-6 {
+  100% {
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
+  }
+}
+
+.project-item:nth-child(6) {
+  -webkit-animation: project-item-animation-6 4.9s infinite;
+          animation: project-item-animation-6 4.9s infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 @media all and (max-width: 1023px) {
   .projects__items {
     max-width: 630px;
@@ -377,25 +519,32 @@ html {
 .contact {
   padding: 50px 0;
   text-align: center;
-  background-color: #FFD400;
+  background-color: #1c5dbe;
+  color: white;
 }
 
 .contact__title {
   padding-bottom: 20px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 50px;
 }
 
 .contact__btn {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   padding: 6px 12px;
-  background-color: #FFF;
-  color: #000;
-  font-family: "Oswald", Arial, sans-serif;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .contact__btn:hover {
   background-color: rgba(255, 255, 255, 0.85);
+  color: #1c5dbe;
 }
 
 @media all and (max-width: 767px) {

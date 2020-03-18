@@ -1,0 +1,11 @@
+$primary: #1c5dbe;
+$background: #1d1d1d;
+$text-color: white;
+$font-family: 'Muli', sans-serif;
+
+@function randomNum($min, $max) {
+     $rand: random();
+     $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+     @return $randomNum;
+}
