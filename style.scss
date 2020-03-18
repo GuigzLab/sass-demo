@@ -1,0 +1,249 @@
+@import 'reset';
+
+/* ----------------------------- *
+ *             FONTS             *
+ * ----------------------------- */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/oswald.woff2') format('woff2'),
+        url('fonts/oswald.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary: #FFD400;
+$font-family: 'Oswald',
+Arial,
+sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------- *
+ *            HEADER             *
+ * ----------------------------- */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 25px;
+    font-family: $font-family;
+    color: #FFF;
+
+    &__logo {
+        padding: 0 8px;
+        border: solid #FFF 2px;
+        border-radius: 50%;
+        font-size: 25px;
+    }
+}
+
+
+
+/* ----------------------------- *
+ *             MENU              *
+ * ----------------------------- */
+
+.menu {
+    &__list {
+        font-size: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 18px;
+
+        a.is-active::after,
+        a:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $primary;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+/* ----------------------------- *
+ *              HERO             *
+ * ----------------------------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__title {
+        position: relative;
+        z-index: 100;
+        font-family: $font-family;
+        font-size: 55px;
+        color: #FFF;
+
+        .hero-name {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 8px;
+                background-color: $primary;
+                transition: height .3s ease-in-out;
+            }
+
+            &:hover::before {
+                height: 100%;
+            }
+
+            &__text {
+                position: relative;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .hero__title {
+        font-size: 35px;
+    }
+
+    .hero-name::before {
+        height: 11px
+    }
+}
+
+/* ----------------------------- *
+ *           PROJECTS            *
+ * ----------------------------- */
+
+.projects {
+    padding: 30px 0;
+    text-align: center;
+
+    &__title {
+        display: inline-block;
+        padding-bottom: 70px;
+        font-family: $font-family;
+        font-size: 50px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 8px;
+            background-color: $primary;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+
+        .project-item {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 30px;
+            line-height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+
+            img {
+                transition: transform .5s ease-in-out;
+            }
+
+            &:hover img  {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .projects__items {
+        max-width: 630px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .projects__title {
+        font-size: 35px;
+    }
+
+    .projects__items {
+        max-width: 300px;
+    }
+}
+
+/* ----------------------------- *
+ *            CONTACT            *
+ * ----------------------------- */
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: $primary;
+
+    &__title {
+        padding-bottom: 20px;
+        font-family: $font-family;
+        font-size: 50px;
+    }
+    
+    &__btn {
+        padding: 6px 12px;
+        background-color: #FFF;
+        color: #000;
+        font-family: $font-family;
+        font-size: 20px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .contact__title {
+        font-size: 35px;
+    }
+}
