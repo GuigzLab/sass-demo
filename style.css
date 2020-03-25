@@ -368,21 +368,21 @@ html {
 
 @-webkit-keyframes project-item-animation-1 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
   }
 }
 
 @keyframes project-item-animation-1 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
   }
 }
 
 .project-item:nth-child(1) {
-  -webkit-animation: project-item-animation-1 2.2s infinite;
-          animation: project-item-animation-1 2.2s infinite;
+  -webkit-animation: project-item-animation-1 4.2s infinite;
+          animation: project-item-animation-1 4.2s infinite;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
@@ -391,21 +391,21 @@ html {
 
 @-webkit-keyframes project-item-animation-2 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 @keyframes project-item-animation-2 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 .project-item:nth-child(2) {
-  -webkit-animation: project-item-animation-2 2.1s infinite;
-          animation: project-item-animation-2 2.1s infinite;
+  -webkit-animation: project-item-animation-2 2.6s infinite;
+          animation: project-item-animation-2 2.6s infinite;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   -webkit-animation-direction: alternate;
@@ -414,21 +414,21 @@ html {
 
 @-webkit-keyframes project-item-animation-3 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
   }
 }
 
 @keyframes project-item-animation-3 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(0.8vw, 1.6vh);
+            transform: translate(0.8vw, 1.6vh);
   }
 }
 
 .project-item:nth-child(3) {
-  -webkit-animation: project-item-animation-3 4.6s infinite;
-          animation: project-item-animation-3 4.6s infinite;
+  -webkit-animation: project-item-animation-3 4.9s infinite;
+          animation: project-item-animation-3 4.9s infinite;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
   -webkit-animation-direction: alternate;
@@ -437,21 +437,21 @@ html {
 
 @-webkit-keyframes project-item-animation-4 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
   }
 }
 
 @keyframes project-item-animation-4 {
   100% {
-    -webkit-transform: translate(0.8vw, 0.8vh);
-            transform: translate(0.8vw, 0.8vh);
+    -webkit-transform: translate(1.6vw, 0.8vh);
+            transform: translate(1.6vw, 0.8vh);
   }
 }
 
 .project-item:nth-child(4) {
-  -webkit-animation: project-item-animation-4 4.5s infinite;
-          animation: project-item-animation-4 4.5s infinite;
+  -webkit-animation: project-item-animation-4 4s infinite;
+          animation: project-item-animation-4 4s infinite;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
   -webkit-animation-direction: alternate;
@@ -460,21 +460,21 @@ html {
 
 @-webkit-keyframes project-item-animation-5 {
   100% {
-    -webkit-transform: translate(0.8vw, 1.6vh);
-            transform: translate(0.8vw, 1.6vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 @keyframes project-item-animation-5 {
   100% {
-    -webkit-transform: translate(0.8vw, 1.6vh);
-            transform: translate(0.8vw, 1.6vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 .project-item:nth-child(5) {
-  -webkit-animation: project-item-animation-5 3.7s infinite;
-          animation: project-item-animation-5 3.7s infinite;
+  -webkit-animation: project-item-animation-5 2.2s infinite;
+          animation: project-item-animation-5 2.2s infinite;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-direction: alternate;
@@ -483,21 +483,21 @@ html {
 
 @-webkit-keyframes project-item-animation-6 {
   100% {
-    -webkit-transform: translate(0.8vw, 1.6vh);
-            transform: translate(0.8vw, 1.6vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 @keyframes project-item-animation-6 {
   100% {
-    -webkit-transform: translate(0.8vw, 1.6vh);
-            transform: translate(0.8vw, 1.6vh);
+    -webkit-transform: translate(1.6vw, 1.6vh);
+            transform: translate(1.6vw, 1.6vh);
   }
 }
 
 .project-item:nth-child(6) {
-  -webkit-animation: project-item-animation-6 5s infinite;
-          animation: project-item-animation-6 5s infinite;
+  -webkit-animation: project-item-animation-6 3.9s infinite;
+          animation: project-item-animation-6 3.9s infinite;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
   -webkit-animation-direction: alternate;

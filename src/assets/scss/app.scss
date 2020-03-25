@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'config';
+@import '~aos/dist/aos.css';
 
 /* ----------------------------- *
  *             FONTS             *
@@ -7,13 +8,13 @@
 
 @font-face {
     font-family: 'Oswald';
-    src: url('fonts/oswald.woff2') format('woff2'),
-        url('fonts/oswald.woff') format('woff');
+    src: url('../fonts/oswald.woff2') format('woff2'),
+        url('../fonts/oswald.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -90,7 +91,7 @@ html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
 
